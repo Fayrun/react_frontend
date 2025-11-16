@@ -8,7 +8,7 @@ function App() {
         <Router>
             <Routes>
                 {publicRoutes.map((route, index) => {
-                    const Layout = route.layout || DefaultLayout;
+                    const Layout = route.layout === null ? React.Fragment : DefaultLayout;
                     const Page = route.component;
                     return (
                         <Route

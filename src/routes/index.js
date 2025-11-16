@@ -1,12 +1,14 @@
 import Home from "../pages/Home";
 import Following from "../pages/Following";
-import ProfilePage from "../pages/Profile";
+import Profile from "../pages/Profile";
+import Upload from "../pages/Upload";
 
 
 const publicRoutes = [
-    {path:'/',component: Home},
+    {path:'',component: Home},
     {path:'/following',component: Following},
-    {path:'/profile',component: ProfilePage},
+    {path:'/profile',component: Profile},
+    {path:'/upload',component: Upload , layout: null},
 ]
 
 const privateRoutes = [
