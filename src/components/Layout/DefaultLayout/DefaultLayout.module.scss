@@ -5,7 +5,11 @@
     align-items: center;
 }
 .container {
-    width: 1150px;
-    min-height: 1000px;
+    width: var(--Default-Layout-width);
+    display: flex;
     background-color: aliceblue;
+}
+.content {
+    flex: 1;
+    display: flex;
 }
